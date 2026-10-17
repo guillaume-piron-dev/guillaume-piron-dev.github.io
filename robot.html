@@ -18,13 +18,13 @@
 <li><code>robots.txt</code> (RFC 9309) : le groupe <code>MySafePlaceBot</code>, sinon le groupe <code>*</code>.</li>
 <li>TDMRep : le fichier <code>/.well-known/tdmrep.json</code>, l'en-tête et la balise <code>tdm-reservation</code> ; une page réservée n'est jamais lue.</li>
 <li>Les directives <code>noindex</code> et <code>none</code>, en en-tête <code>X-Robots-Tag</code> ou en balise <code>robots</code>.</li>
-<li>Une requête toutes les deux secondes au plus sur un même site.</li>
+<li>Une requête toutes les deux secondes au plus sur un même site, ou moins souvent si le <code>robots.txt</code> du site le demande (<code>Crawl-delay</code>, jusqu'à 60 secondes ; un site qui demande davantage n'est pas lu).</li>
 </ul>
 <h2>Pour l'exclure de votre site</h2>
 <pre>User-agent: MySafePlaceBot
 Disallow: /</pre>
 <h2>État</h2>
-<p>Essai en cours, en octobre 2026, sur ce seul site de pages fictives. Aucune autre source n'est lue avant la fin de cet essai.</p>
+<p>Essai en cours, en octobre 2026 : ce site de pages fictives, puis quatre sources dont les conditions ne s'opposent pas à la lecture automatique : The Conversation France, les communiqués de presse du Parlement européen en français, ceux du Sénat et Global Voices en français. Le robot n'en publie rien : il compte seulement ce qu'il trouve, sans rien garder.</p>
 <h2>Contact</h2>
 <p>Par un ticket sur le dépôt de ce site : <a href="https://github.com/guillaume-piron-dev/guillaume-piron-dev.github.io/issues">github.com/guillaume-piron-dev/guillaume-piron-dev.github.io</a>.</p>
 </main>
