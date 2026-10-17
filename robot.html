@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notre robot : MySafePlaceBot</title>
+</head>
+<body>
+<main>
+<h1>Notre robot : MySafePlaceBot</h1>
+<p>My Safe Place est un service européen, en préparation, qui prévient chacun quand son propre nom apparaît sur des pages publiques. Son robot s'annonce ainsi : <code>MySafePlaceBot/&lt;version&gt; (+https://guillaume-piron-dev.github.io/robot.html)</code>.</p>
+<h2>Ce qu'il lit</h2>
+<p>Les pages publiques listées par les flux et les plans de site des sources qu'il a enregistrées, sur les domaines de ces sources seulement. Du texte uniquement : ni image, ni vidéo, ni formulaire, ni page de connexion, aucun cookie.</p>
+<h2>Ce qu'il garde</h2>
+<p>Aucun texte de page. Quand le nom d'un utilisateur y figure, il garde pour cet utilisateur seulement l'adresse de la page, son titre et un extrait de sept mots autour du nom. Le reste est oublié dès la lecture.</p>
+<h2>Les règles qu'il respecte</h2>
+<ul>
+<li><code>robots.txt</code> (RFC 9309) : le groupe <code>MySafePlaceBot</code>, sinon le groupe <code>*</code>.</li>
+<li>TDMRep : le fichier <code>/.well-known/tdmrep.json</code>, l'en-tête et la balise <code>tdm-reservation</code> ; une page réservée n'est jamais lue.</li>
+<li>Les directives <code>noindex</code> et <code>none</code>, en en-tête <code>X-Robots-Tag</code> ou en balise <code>robots</code>.</li>
+<li>Une requête toutes les deux secondes au plus sur un même site.</li>
+</ul>
+<h2>Pour l'exclure de votre site</h2>
+<pre>User-agent: MySafePlaceBot
+Disallow: /</pre>
+<h2>État</h2>
+<p>Essai en cours, en octobre 2026, sur ce seul site de pages fictives. Aucune autre source n'est lue avant la fin de cet essai.</p>
+<h2>Contact</h2>
+<p>Par un ticket sur le dépôt de ce site : <a href="https://github.com/guillaume-piron-dev/guillaume-piron-dev.github.io/issues">github.com/guillaume-piron-dev/guillaume-piron-dev.github.io</a>.</p>
+</main>
+</body>
+</html>

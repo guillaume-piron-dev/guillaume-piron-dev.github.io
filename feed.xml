@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Site d'essai du robot My Safe Place</title>
+<link>https://guillaume-piron-dev.github.io/</link>
+<description>Pages fictives pour l'essai du robot de My Safe Place.</description>
+<language>fr</language>
+<item><title>Semi-marathon d'automne</title><link>https://guillaume-piron-dev.github.io/articles/marathon.html</link></item>
+<item><title>Album photo du club</title><link>https://guillaume-piron-dev.github.io/articles/photos.html</link></item>
+<item><title>Ravitaillement</title><link>https://guillaume-piron-dev.github.io/articles/approche.html</link></item>
+<item><title>Le gîte des coureurs</title><link>https://guillaume-piron-dev.github.io/articles/sans_nom.html</link></item>
+<item><title>Page cachée aux moteurs</title><link>https://guillaume-piron-dev.github.io/articles/cache.html</link></item>
+<item><title>Page réservée</title><link>https://guillaume-piron-dev.github.io/articles/reserve.html</link></item>
+<item><title>Page interdite au robot</title><link>https://guillaume-piron-dev.github.io/prive/zelie.html</link></item>
+<item><title>Ailleurs</title><link>https://example.org/ailleurs.html</link></item>
+</channel>
+</rss>

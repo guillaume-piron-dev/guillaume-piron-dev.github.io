@@ -1,0 +1,9 @@
+# Site d'essai du robot My Safe Place : pages fictives.
+# Notre robot lit tout sauf /prive/ ; les autres robots ne lisent rien.
+User-agent: MySafePlaceBot
+Disallow: /prive/
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://guillaume-piron-dev.github.io/sitemap.xml
